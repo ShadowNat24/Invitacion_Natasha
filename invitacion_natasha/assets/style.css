@@ -58,10 +58,12 @@ body {
 }
 
 .portada-contenido h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: #d84b72;
     font-family: 'Georgia', serif;
     letter-spacing: 1px;
+    line-height: 1.2;
+    margin-bottom: 10px;
 }
 
 .mis18 {
@@ -78,26 +80,29 @@ body {
 
 .gato {
     margin: 20px auto;
-    width: 140px;
-    height: 140px;
+    width: 160px;
+    height: 160px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 12px;
+    overflow: hidden;
 }
 
 .gato img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .boton-entrar {
     background-color: #d84b72;
     color: #ffffff;
     border: none;
-    padding: 12px 24px;
+    padding: 12px 28px;
     border-radius: 25px;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: bold;
     letter-spacing: 1px;
     cursor: pointer;
@@ -112,14 +117,14 @@ body {
 }
 
 .fecha {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: #7a6168;
     margin-top: 15px;
     letter-spacing: 1px;
 }
 
 .te-espero {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     color: #d84b72;
     margin-top: 8px;
 }
@@ -347,11 +352,11 @@ footer .firma {
 }
 
 /* ==========================================
-   6. ESTILOS DE EASTER EGGS
+   6. EASTER EGGS (EFECTOS DISCRETOS)
    ========================================== */
 .emoji-flotante {
     position: absolute;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     pointer-events: none;
     animation: flotarArriba 1s ease-out forwards;
     z-index: 100;
@@ -364,7 +369,7 @@ footer .firma {
     }
     100% {
         opacity: 0;
-        transform: translateY(-80px) scale(1.5);
+        transform: translateY(-60px) scale(1.3);
     }
 }
 
@@ -385,7 +390,7 @@ body.modo-fiesta {
 
 body.modo-fiesta .portada,
 body.modo-fiesta .invitacion {
-    background: transparent !important;
+    background: #180022 !important;
     border-color: #00ffff !important;
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
 }
@@ -395,7 +400,7 @@ body.modo-fiesta .mis18,
 body.modo-fiesta .nombre-script,
 body.modo-fiesta .numero {
     color: #ff007f !important;
-    text-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f, 0 0 40px #ff007f;
+    text-shadow: 0 0 10px #ff007f;
 }
 
 body.modo-fiesta .boton-entrar,
