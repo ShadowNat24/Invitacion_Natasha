@@ -896,3 +896,65 @@ footer p {
     }
 
 }
+/* Emojis flotantes del gato */
+.emoji-flotante {
+    position: absolute;
+    font-size: 1.8rem;
+    pointer-events: none;
+    animation: flotarArriba 1s ease-out forwards;
+    z-index: 100;
+}
+
+@keyframes flotarArriba {
+    0% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-80px) scale(1.5);
+    }
+}
+
+/* Animación Giro del Gato */
+.gato-super-spin {
+    animation: superSpin 0.8s infinite linear;
+}
+
+@keyframes superSpin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* MODO FIESTA NEÓN */
+body.modo-fiesta {
+    background-color: #0f051d !important;
+    color: #00ffff !important;
+    animation: fondoFiesta 4s infinite alternate;
+}
+
+body.modo-fiesta .portada,
+body.modo-fiesta .invitacion {
+    background: transparent !important;
+}
+
+body.modo-fiesta h1,
+body.modo-fiesta .mis18,
+body.modo-fiesta .nombre-script,
+body.modo-fiesta .numero {
+    color: #ff007f !important;
+    text-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f, 0 0 40px #ff007f;
+}
+
+body.modo-fiesta .boton-entrar,
+body.modo-fiesta .boton-rsvp {
+    background-color: #00ffff !important;
+    color: #000 !important;
+    box-shadow: 0 0 15px #00ffff;
+}
+
+@keyframes fondoFiesta {
+    0% { background-color: #0f051d; }
+    50% { background-color: #1a002c; }
+    100% { background-color: #051923; }
+}
