@@ -103,7 +103,7 @@
 
 
             <!-- ==========================
-                 INFORMACIÓN PRINCIPAL
+                 INFORMACIÓN PRINCIPAL Y CALENDARIO
             =========================== -->
             <section class="bloque-info">
                 <h2>✦ La celebración ✦</h2>
@@ -122,13 +122,55 @@
                     <strong>Lugar</strong>
                     <p>Próximamente</p>
                 </div>
+
+                <!-- BOTÓN DE AGREGAR AL CALENDARIO -->
+                <div style="margin-top: 25px;">
+                    <a 
+                        href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Mis+18+A%C3%B1os+%F0%9F%92%97+Natasha&dates=20261003T210000/20261004T050000&details=%C2%A1Lleg%C3%B3+el+día!+Te+espero+para+festejar+mis+18+a%C3%B1os." 
+                        target="_blank" 
+                        class="boton-rsvp" 
+                        style="text-decoration: none; display: inline-block; font-size: 16px; padding: 12px 20px;"
+                    >
+                        📅 AGREGAR A GOOGLE CALENDAR
+                    </a>
+                </div>
+            </section>
+
+
+            <!-- ==========================
+                 CUENTA REGRESIVA / RELOJITO
+            =========================== -->
+            <section class="bloque-info" style="margin-top: 35px;">
+                <h2>✦ Cuánto falta ✦</h2>
+
+                <div id="reloj" style="display: flex; justify-content: center; gap: 15px; margin-top: 20px;">
+                    <div>
+                        <span id="dias" style="font-size: 32px; font-weight: bold; color: #d87570;">00</span>
+                        <p style="font-size: 14px; margin: 2px 0 0; color: #888;">Días</p>
+                    </div>
+                    <span style="font-size: 28px; color: #d87570;">:</span>
+                    <div>
+                        <span id="horas" style="font-size: 32px; font-weight: bold; color: #d87570;">00</span>
+                        <p style="font-size: 14px; margin: 2px 0 0; color: #888;">Hs</p>
+                    </div>
+                    <span style="font-size: 28px; color: #d87570;">:</span>
+                    <div>
+                        <span id="minutos" style="font-size: 32px; font-weight: bold; color: #d87570;">00</span>
+                        <p style="font-size: 14px; margin: 2px 0 0; color: #888;">Min</p>
+                    </div>
+                    <span style="font-size: 28px; color: #d87570;">:</span>
+                    <div>
+                        <span id="segundos" style="font-size: 32px; font-weight: bold; color: #d87570;">00</span>
+                        <p style="font-size: 14px; margin: 2px 0 0; color: #888;">Seg</p>
+                    </div>
+                </div>
             </section>
 
 
             <!-- ==========================
                  TARJETA: REGALOS
             =========================== -->
-            <section class="bloque-info">
+            <section class="bloque-info" style="margin-top: 35px;">
                 <h2>✦ Regalos ✦</h2>
                 <p style="font-size: 19px; line-height: 1.4; margin-bottom: 20px;">
                     Si querés regalarme algo o ayudarme en esta nueva etapa, tu aporte es más que bienvenido 💗
