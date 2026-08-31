@@ -2,90 +2,60 @@
 <html lang="es">
 
 <head>
-
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Confirmación | Natasha</title>
 
-    <link
-        rel="stylesheet"
-        href="assets/formulario.css"
-    >
-
+    <link rel="stylesheet" href="assets/formulario.css">
 </head>
-
 
 <body>
 
 <main class="formulario-pagina">
 
-
     <div class="decoracion d1">✦</div>
     <div class="decoracion d2">♡</div>
     <div class="decoracion d3">✧</div>
 
-
     <section class="tarjeta-formulario">
-
 
         <p class="mini">
             MIS 18
         </p>
 
-
         <h1>
             Natasha
         </h1>
-
 
         <div class="corazon">
             ♡
         </div>
 
-
         <h2>
             ¿Me acompañás?
         </h2>
 
-
         <p class="introduccion">
-
-            Me encantaría compartir este día
-            con vos. 💗
-
+            Me encantaría compartir este día con vos. 💗
             <br>
-
-            Confirmá tu asistencia
-            para que pueda preparar todo.
-
+            Confirmá tu asistencia para que pueda preparar todo.
         </p>
-
-
 
         <!-- =====================================
              FORMULARIO CONECTADO A FORMSPREE
         ====================================== -->
-
         <form
             id="formularioRSVP"
             action="https://formspree.io/f/mqpkepzv"
             method="POST"
         >
 
-
             <!-- NOMBRE -->
-
             <div class="campo">
-
                 <label for="nombre">
                     ¿Cuál es tu nombre?
                 </label>
-
                 <input
                     type="text"
                     id="nombre"
@@ -93,51 +63,37 @@
                     placeholder="Escribí tu nombre"
                     required
                 >
-
             </div>
 
-
-
             <!-- ASISTENCIA -->
-
             <div class="campo">
-
                 <label>
                     ¿Vas a venir?
                 </label>
 
-
                 <div class="opciones">
-
                     <button
                         type="button"
                         class="opcion asistencia"
                         data-value="si"
                     >
-
                         💗
                         <span>
                             Sí, voy a estar
                         </span>
-
                     </button>
-
 
                     <button
                         type="button"
                         class="opcion asistencia"
                         data-value="no"
                     >
-
                         😭
                         <span>
                             No voy a poder
                         </span>
-
                     </button>
-
                 </div>
-
 
                 <input
                     type="hidden"
@@ -145,80 +101,57 @@
                     name="asistencia"
                     required
                 >
-
             </div>
-
-
 
             <!-- =====================================
                  PREGUNTAS PARA QUIENES ASISTEN
             ====================================== -->
-
             <div
                 id="preguntasSi"
                 class="preguntas-ocultas"
             >
 
-
                 <!-- ACOMPAÑANTES -->
-
                 <div class="campo">
-
                     <label>
                         ¿Venís acompañado/a?
                     </label>
 
-
                     <div class="opciones">
-
                         <button
                             type="button"
                             class="opcion acompanado"
                             data-value="si"
                         >
-
                             Sí 💗
-
                         </button>
-
 
                         <button
                             type="button"
                             class="opcion acompanado"
                             data-value="no"
                         >
-
                             No
-
                         </button>
-
                     </div>
-
 
                     <input
                         type="hidden"
                         id="acompanado"
                         name="acompanado"
                     >
-
                 </div>
 
-
-
                 <!-- CANTIDAD DE ACOMPAÑANTES -->
-
                 <div
                     id="cantidadAcompanantes"
                     class="campo oculto"
                 >
-
                     <label for="acompanantes">
                         ¿Cuántas personas vienen con vos?
                     </label>
 
-
                     <div class="contador">
-
                         <button
                             type="button"
                             id="menosAcompanantes"
@@ -226,11 +159,9 @@
                             −
                         </button>
 
-
                         <span id="numeroAcompanantes">
                             1
                         </span>
-
 
                         <button
                             type="button"
@@ -238,9 +169,7 @@
                         >
                             +
                         </button>
-
                     </div>
-
 
                     <input
                         type="hidden"
@@ -248,70 +177,49 @@
                         name="acompanantes"
                         value="0"
                     >
-
                 </div>
 
-
-
                 <!-- NIÑOS -->
-
                 <div class="campo">
-
                     <label>
                         ¿Venís con niños?
                     </label>
 
-
                     <div class="opciones">
-
                         <button
                             type="button"
                             class="opcion ninos"
                             data-value="si"
                         >
-
                             Sí 👶
-
                         </button>
-
 
                         <button
                             type="button"
                             class="opcion ninos"
                             data-value="no"
                         >
-
                             No
-
                         </button>
-
                     </div>
-
 
                     <input
                         type="hidden"
                         id="ninos"
                         name="ninos"
                     >
-
                 </div>
 
-
-
                 <!-- CANTIDAD DE NIÑOS -->
-
                 <div
                     id="cantidadNinos"
                     class="campo oculto"
                 >
-
                     <label>
                         ¿Cuántos niños?
                     </label>
 
-
                     <div class="contador">
-
                         <button
                             type="button"
                             id="menosNinos"
@@ -319,11 +227,9 @@
                             −
                         </button>
 
-
                         <span id="numeroNinos">
                             1
                         </span>
-
 
                         <button
                             type="button"
@@ -331,9 +237,7 @@
                         >
                             +
                         </button>
-
                     </div>
-
 
                     <input
                         type="hidden"
@@ -341,21 +245,13 @@
                         name="cantidad_ninos"
                         value="0"
                     >
-
                 </div>
 
-
-
-                <!-- =================================
-                     BEBIDA / COMIDA
-                ================================== -->
-
+                <!-- BEBIDA / COMIDA -->
                 <div class="campo">
-
                     <label for="bebida_comida">
                         ¿Vas a traer algo para tomar o compartir? (Opcional) 🍹
                     </label>
-
 
                     <input
                         type="text"
@@ -363,19 +259,27 @@
                         name="bebida_comida"
                         placeholder="Ej: bebida, hielo, algo para comer..."
                     >
-
                 </div>
 
+                <!-- CANCIÓN EN EL FORMULARIO -->
+                <div class="campo">
+                    <label for="cancion">
+                        ¿Qué tema no puede faltar en la playlist? (Opcional) 🎵
+                    </label>
 
+                    <input
+                        type="text"
+                        id="cancion"
+                        name="cancion"
+                        placeholder="Escribí la canción o artista..."
+                    >
+                </div>
 
                 <!-- MENSAJE -->
-
                 <div class="campo">
-
                     <label for="mensaje">
                         ¿Querés dejarme un mensajito? 💌
                     </label>
-
 
                     <textarea
                         id="mensaje"
@@ -383,114 +287,81 @@
                         rows="4"
                         placeholder="Escribí algo lindo..."
                     ></textarea>
-
                 </div>
 
-
-
                 <!-- ENVIAR -->
-
                 <button
                     type="submit"
                     class="enviar"
                 >
-
                     CONFIRMAR ASISTENCIA 💗
-
                 </button>
 
             </div>
 
-
-
             <!-- =================================
                  NO ASISTE
             ================================== -->
-
             <div
                 id="respuestaNo"
                 class="respuesta-no"
             >
-
                 <div class="emoji-no">
                     😭
                 </div>
-
 
                 <h3>
                     Ay, qué pena...
                 </h3>
 
-
                 <p>
-
                     Gracias por avisarnos igualmente.
                     <br>
                     Te vamos a extrañar 💗
-
                 </p>
-
 
                 <button
                     type="submit"
                     class="enviar"
                 >
-
                     ENVIAR RESPUESTA
-
                 </button>
-
             </div>
 
-
         </form>
-
-
 
         <!-- =====================================
              MENSAJE FINAL
         ====================================== -->
-
         <div
             id="mensajeFinal"
             class="mensaje-final"
         >
-
             <div>
                 ✨
             </div>
 
-
             <h2>
                 ¡Listo!
             </h2>
-
 
             <p>
                 Gracias por confirmar.
                 <br>
                 Te espero para festejar conmigo 💗
             </p>
-
         </div>
 
-
-
         <!-- VOLVER -->
-
         <div class="volver">
-
             <a href="index.html">
                 ← Volver a la invitación
             </a>
-
         </div>
-
 
     </section>
 
 </main>
-
 
 <script src="assets/formulario.js"></script>
 
