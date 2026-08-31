@@ -15,6 +15,8 @@
         rel="stylesheet"
         href="assets/style.css"
     >
+    <!-- Librería para el confeti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 
 
@@ -22,6 +24,8 @@
 
 <main class="site">
 
+    <!-- Audio para el miau del gato -->
+    <audio id="soundMiau" src="https://assets.mixkit.co/active_storage/sfx/2869/2869-preview.mp3" preload="auto"></audio>
 
     <!-- ==============================
          PORTADA
@@ -32,7 +36,7 @@
         class="portada"
     >
 
-        <div class="decoracion d1">✦</div>
+        <div class="decoracion d1" id="starParty" title="???">✦</div>
         <div class="decoracion d2">♡</div>
         <div class="decoracion d3">✧</div>
 
@@ -40,24 +44,26 @@
         <div class="portada-contenido">
 
             <p class="pequeno">
-                BIENVENIDO
+                
             </p>
 
 
             <h1>
-               
+                BIENVENIDO A MI INVITACION DE
             </h1>
 
-            <div class="mis18">
-             <span></span>
+
+            <div class="mis18" id="secret18" style="cursor: pointer;">
+                mis <span>18</span>
             </div>
 
 
             <!-- GATO -->
 
-            <div class="gato">
+            <div class="gato" id="gatoMeme" style="cursor: pointer; position: relative;">
 
                 <img
+                    id="imgGato"
                     src="assets/gato-meme.png"
                     alt="Gatito"
                 >
