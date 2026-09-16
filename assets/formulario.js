@@ -1,5 +1,24 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+    // La confirmación está disponible hasta el 25 de septiembre inclusive.
+    const fechaLimite = new Date("2026-09-26T00:00:00-03:00");
+    const fechaActual = new Date();
+    const formulario = document.getElementById("formularioRSVP");
+
+    if (formulario && fechaActual >= fechaLimite) {
+        formulario.innerHTML = `
+            <div class="respuesta-no visible" style="display:block;">
+                <div class="emoji-no">📅</div>
+                <h3>La fecha de confirmación ya pasó</h3>
+                <p>
+                    El plazo para confirmar asistencia terminó el 25 de septiembre.<br>
+                    Por eso, se asumirá que no vas a poder asistir. 💗
+                </p>
+            </div>
+        `;
+        return;
+    }
+
     const selectGroup = (buttons, selectedButton) => {
         buttons.forEach((button) => {
             button.classList.toggle("seleccionado", button === selectedButton);
@@ -160,6 +179,12 @@ document.addEventListener("DOMContentLoaded", function () {
     if (form) {
         form.addEventListener("submit", async (event) => {
             event.preventDefault();
+
+            // Comprobación adicional por si alguien deja el formulario abierto hasta después del plazo.
+            if (new Date() >= fechaLimite) {
+                alert("El plazo para confirmar terminó el 25 de septiembre. Se asumirá que no vas a poder asistir. 💗");
+                return;
+            }
 
             if (!inputAsistencia || !inputAsistencia.value) {
                 alert("Elegí si vas a asistir 💗");
