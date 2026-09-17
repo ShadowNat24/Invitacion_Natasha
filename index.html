@@ -78,159 +78,67 @@
                 </div>
 
                 <div style="margin-top: 25px;">
-                    <a
-                        href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Mis+18+A%C3%B1os+%F0%9F%92%97+Natasha&dates=20261003T200000/20261004T010000&location=Chiriguanos+2718%2C+11600+Montevideo%2C+Departamento+de+Montevideo&details=%C2%A1Lleg%C3%B3+el+d%C3%ADa!+Te+espero+para+festejar+mis+18+a%C3%B1os."
-                        target="_blank"
-                        class="boton-rsvp"
-                        style="text-decoration: none; display: inline-block; font-size: 16px; padding: 12px 20px;"
-                    >
-                        📅 AGREGAR A GOOGLE CALENDAR
-                    </a>
+                    <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Mis+18+A%C3%B1os+%F0%9F%92%97+Natasha&dates=20261003T200000/20261004T010000&location=Chiriguanos+2718%2C+11600+Montevideo%2C+Departamento+de+Montevideo&details=%C2%A1Lleg%C3%B3+el+d%C3%ADa!+Te+espero+para+festejar+mis+18+a%C3%B1os." target="_blank" class="boton-rsvp" style="text-decoration: none; display: inline-block; font-size: 16px; padding: 12px 20px;">📅 AGREGAR A GOOGLE CALENDAR</a>
                 </div>
 
                 <div style="margin-top: 15px;">
-                    <a
-                        href="https://www.google.com/maps/search/?api=1&query=Chiriguanos+2718%2C+Montevideo%2C+Uruguay"
-                        target="_blank"
-                        class="boton-rsvp"
-                        style="text-decoration: none; display: inline-block; font-size: 16px; padding: 12px 20px;"
-                    >
-                        📍 CÓMO LLEGAR
-                    </a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Chiriguanos+2718%2C+Montevideo%2C+Uruguay" target="_blank" class="boton-rsvp" style="text-decoration: none; display: inline-block; font-size: 16px; padding: 12px 20px;">📍 CÓMO LLEGAR</a>
                 </div>
 
                 <div style="margin-top: 15px;">
-                    <a
-                        href="https://wa.me/?text=%C2%A1Hola!%20Te%20comparto%20la%20invitaci%C3%B3n%20a%20los%2018%20de%20Natasha%20%F0%9F%92%97%20https%3A%2F%2Fshadownat24.github.io%2FInvitacion_Natasha%2F"
-                        target="_blank"
-                        class="boton-rsvp"
-                        style="text-decoration: none; display: inline-block; font-size: 16px; padding: 12px 20px;"
-                    >
-                        💬 COMPARTIR POR WHATSAPP
-                    </a>
+                    <a href="https://wa.me/?text=%C2%A1Hola!%20Te%20comparto%20la%20invitaci%C3%B3n%20a%20los%2018%20de%20Natasha%20%F0%9F%92%97%20https%3A%2F%2Fshadownat24.github.io%2FInvitacion_Natasha%2F" target="_blank" class="boton-rsvp" style="text-decoration: none; display: inline-block; font-size: 16px; padding: 12px 20px;">💬 COMPARTIR POR WHATSAPP</a>
+                </div>
+            </section>
+
+            <section id="recordatorio" class="bloque-info recordatorio-notis" style="margin-top: 35px; display: none;">
+                <h2>🔔 Recordatorio</h2>
+                <p style="font-size: 18px; line-height: 1.5; margin-bottom: 15px;">
+                    Si todavía no confirmaste, recordá hacerlo antes del <strong>25 de septiembre</strong> 💗
+                </p>
+                <p style="font-size: 17px; line-height: 1.5; margin-bottom: 18px;">
+                    Si ya confirmaste, podés ignorar este mensaje. Si tenés alguna duda, consultá con Natasha.
+                    Y no te olvides de leer las <strong>cositas importantes</strong> de la invitación.
+                </p>
+                <button id="activarNotificaciones" type="button" class="boton-rsvp">🔔 ACTIVAR RECORDATORIOS</button>
+                <div style="margin-top: 12px;">
+                    <a id="whatsappRecordatorio" href="https://wa.me/?text=%F0%9F%92%97%20Recordatorio%20de%20Natasha%3A%20si%20todav%C3%ADa%20no%20confirmaste%20tu%20asistencia%2C%20record%C3%A1%20hacerlo%20antes%20del%2025%20de%20septiembre.%20Si%20ya%20confirmaste%2C%20pod%C3%A9s%20ignorar%20este%20mensaje.%20Si%20ten%C3%A9s%20alguna%20duda%2C%20consult%C3%A1%20con%20Natasha.%20https%3A%2F%2Fshadownat24.github.io%2FInvitacion_Natasha%2F" target="_blank" class="boton-rsvp" style="text-decoration: none; display: inline-block; font-size: 16px; padding: 12px 20px;">💬 ENVIAR RECORDATORIO POR WHATSAPP</a>
                 </div>
             </section>
 
             <section class="bloque-info" style="margin-top: 35px;">
                 <h2>✦ Cuánto falta ✦</h2>
                 <div id="reloj" style="display: flex; justify-content: center; gap: 15px; margin-top: 20px;">
-                    <div>
-                        <span id="dias" style="font-size: 32px; font-weight: bold; color: #d87570;">00</span>
-                        <p style="font-size: 14px; margin: 2px 0 0; color: #888;">Días</p>
-                    </div>
+                    <div><span id="dias" style="font-size: 32px; font-weight: bold; color: #d87570;">00</span><p style="font-size: 14px; margin: 2px 0 0; color: #888;">Días</p></div>
                     <span style="font-size: 28px; color: #d87570;">:</span>
-                    <div>
-                        <span id="horas" style="font-size: 32px; font-weight: bold; color: #d87570;">00</span>
-                        <p style="font-size: 14px; margin: 2px 0 0; color: #888;">Hs</p>
-                    </div>
+                    <div><span id="horas" style="font-size: 32px; font-weight: bold; color: #d87570;">00</span><p style="font-size: 14px; margin: 2px 0 0; color: #888;">Hs</p></div>
                     <span style="font-size: 28px; color: #d87570;">:</span>
-                    <div>
-                        <span id="minutos" style="font-size: 32px; font-weight: bold; color: #d87570;">00</span>
-                        <p style="font-size: 14px; margin: 2px 0 0; color: #888;">Min</p>
-                    </div>
+                    <div><span id="minutos" style="font-size: 32px; font-weight: bold; color: #d87570;">00</span><p style="font-size: 14px; margin: 2px 0 0; color: #888;">Min</p></div>
                     <span style="font-size: 28px; color: #d87570;">:</span>
-                    <div>
-                        <span id="segundos" style="font-size: 32px; font-weight: bold; color: #d87570;">00</span>
-                        <p style="font-size: 14px; margin: 2px 0 0; color: #888;">Seg</p>
-                    </div>
+                    <div><span id="segundos" style="font-size: 32px; font-weight: bold; color: #d87570;">00</span><p style="font-size: 14px; margin: 2px 0 0; color: #888;">Seg</p></div>
                 </div>
             </section>
 
             <section class="bloque-info" style="margin-top: 35px;">
                 <h2>✦ Regalos ✦</h2>
-                <p style="font-size: 19px; line-height: 1.4; margin-bottom: 20px;">
-                    Si querés regalarme algo o ayudarme en esta nueva etapa, tu aporte es más que bienvenido 💗
-                </p>
-
-                <div class="dato-evento">
-                    <strong>MiDinero</strong>
-                    <p>N.º de cuenta: <strong>3701462028</strong></p>
-                    <p style="font-size: 17px; color: #a96b66; margin-top: 2px;">Natasha Ramos</p>
-                </div>
-
-                <div class="dato-evento" style="margin-top: 22px;">
-                    <strong>Prex</strong>
-                    <p>N.º de cuenta: <strong>1907204</strong></p>
-                    <p style="font-size: 17px; color: #a96b66; margin-top: 2px;">Natasha Ramos</p>
-                </div>
+                <p style="font-size: 19px; line-height: 1.4; margin-bottom: 20px;">Si querés regalarme algo o ayudarme en esta nueva etapa, tu aporte es más que bienvenido 💗</p>
+                <div class="dato-evento"><strong>MiDinero</strong><p>N.º de cuenta: <strong>3701462028</strong></p><p style="font-size: 17px; color: #a96b66; margin-top: 2px;">Natasha Ramos</p></div>
+                <div class="dato-evento" style="margin-top: 22px;"><strong>Prex</strong><p>N.º de cuenta: <strong>1907204</strong></p><p style="font-size: 17px; color: #a96b66; margin-top: 2px;">Natasha Ramos</p></div>
             </section>
 
             <section class="reglas">
                 <h2 class="titulo-reglas">♡ Unas cositas importantes ♡</h2>
-
-                <div class="regla">
-                    <button class="regla-titulo" type="button">
-                        <span>Bebidas alcohólicas</span>
-                        <span class="flecha">+</span>
-                    </button>
-                    <div class="regla-contenido">
-                        <p>Si vas a tomar, es obligatorio traer tu propia bebida alcohólica.</p>
-                    </div>
-                </div>
-
-                <div class="regla">
-                    <button class="regla-titulo" type="button">
-                        <span>Para compartir</span>
-                        <span class="flecha">+</span>
-                    </button>
-                    <div class="regla-contenido">
-                        <p>Si es posible, te pedimos que traigas algo para tomar o compartir.</p>
-                    </div>
-                </div>
-
-                <div class="regla">
-                    <button class="regla-titulo" type="button">
-                        <span>Invitados</span>
-                        <span class="flecha">+</span>
-                    </button>
-                    <div class="regla-contenido">
-                        <p>Si vas a traer a alguien que no recibió invitación, avisá con anticipación.</p>
-                    </div>
-                </div>
-
-                <div class="regla">
-                    <button class="regla-titulo" type="button">
-                        <span>Niños</span>
-                        <span class="flecha">+</span>
-                    </button>
-                    <div class="regla-contenido">
-                        <p>Si vas a asistir con niños, indicá cuántos en el formulario de confirmación.</p>
-                    </div>
-                </div>
-
+                <div class="regla"><button class="regla-titulo" type="button"><span>Bebidas alcohólicas</span><span class="flecha">+</span></button><div class="regla-contenido"><p>Si vas a tomar, es obligatorio traer tu propia bebida alcohólica.</p></div></div>
+                <div class="regla"><button class="regla-titulo" type="button"><span>Para compartir</span><span class="flecha">+</span></button><div class="regla-contenido"><p>Si es posible, te pedimos que traigas algo para tomar o compartir.</p></div></div>
+                <div class="regla"><button class="regla-titulo" type="button"><span>Invitados</span><span class="flecha">+</span></button><div class="regla-contenido"><p>Si vas a traer a alguien que no recibió invitación, avisá con anticipación.</p></div></div>
+                <div class="regla"><button class="regla-titulo" type="button"><span>Niños</span><span class="flecha">+</span></button><div class="regla-contenido"><p>Si vas a asistir con niños, indicá cuántos en el formulario de confirmación.</p></div></div>
                 <p class="gracias">Gracias por tener en cuenta estos detalles 💗</p>
             </section>
 
-            <section class="confirmacion" style="margin-top: 45px;">
-                <h2>🎵</h2>
-                <h3>¿Qué tema no puede faltar?</h3>
-                <p>¡Contame en el formulario qué canción querés escuchar para sumarla a la playlist!</p>
-                <button type="button" class="boton-rsvp" onclick="window.location.href='formulario.html';">
-                    SUGERIR CANCIÓN EN EL FORMULARIO
-                </button>
-            </section>
+            <section class="confirmacion" style="margin-top: 45px;"><h2>🎵</h2><h3>¿Qué tema no puede faltar?</h3><p>¡Contame en el formulario qué canción querés escuchar para sumarla a la playlist!</p><button type="button" class="boton-rsvp" onclick="window.location.href='formulario.html';">SUGERIR CANCIÓN EN EL FORMULARIO</button></section>
+            <section class="confirmacion"><h2>♡</h2><h3>¿Nos acompañás?</h3><p>Confirmá tu asistencia para que podamos organizar todo.</p><p style="font-size: 17px; color: #a96b66; margin-top: 10px;">📅 Podés confirmar hasta el 25 de septiembre. Después de esa fecha, se asumirá que no vas a poder asistir.</p><button type="button" class="boton-rsvp" onclick="window.location.href='formulario.html';">CONFIRMAR ASISTENCIA</button></section>
 
-            <section class="confirmacion">
-                <h2>♡</h2>
-                <h3>¿Nos acompañás?</h3>
-                <p>Confirmá tu asistencia para que podamos organizar todo.</p>
-                <p style="font-size: 17px; color: #a96b66; margin-top: 10px;">📅 Podés confirmar hasta el 25 de septiembre. Después de esa fecha, se asumirá que no vas a poder asistir.</p>
-                <button type="button" class="boton-rsvp" onclick="window.location.href='formulario.html';">
-                    CONFIRMAR ASISTENCIA
-                </button>
-            </section>
-
-            <footer>
-                <div class="corazones">♡ ✦ ♡</div>
-                <div class="firma">Natasha</div>
-                <p>Te espero 💗</p>
-            </footer>
-
-            <div style="margin-top: 25px; padding: 0 20px 30px; text-align: center;">
-                <p style="margin: 0; font-size: 17px; line-height: 1.5; color: #a96b66;">
-                    Gracias por ser parte de este momento tan especial 💗
-                </p>
-            </div>
+            <footer><div class="corazones">♡ ✦ ♡</div><div class="firma">Natasha</div><p>Te espero 💗</p></footer>
+            <div style="margin-top: 25px; padding: 0 20px 30px; text-align: center;"><p style="margin: 0; font-size: 17px; line-height: 1.5; color: #a96b66;">Gracias por ser parte de este momento tan especial 💗</p></div>
         </div>
     </section>
 </main>
